@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "email": "alice@gmail.com"
+    },
+    {
+      "id": "123c",
+      "name": "PradeepK",
+      "email": "pradeepkhatri44@live.com"
+    },
+    {
+      "id": "1a52",
+      "name": "Bob Builder",
+      "email": "bobthebuilder@jayenge.com"
+    }
+  ]
+}

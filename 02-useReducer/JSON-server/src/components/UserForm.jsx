@@ -4,9 +4,7 @@ export default function UserForm({ onSave, selectedUser }) {
   const [user, setUser] = useState({ name: "", email: "" });
 
   useEffect(() => {
-    if (selectedUser) {
-      setUser(selectedUser);
-    }
+    if (selectedUser) setUser(selectedUser);
   }, [selectedUser]);
 
   const handleSubmit = (e) => {
@@ -21,10 +19,10 @@ export default function UserForm({ onSave, selectedUser }) {
     <form
       onSubmit={handleSubmit}
       style={{
-        border: "1px solid #ddd",
-        padding: "1rem",
-        borderRadius: "8px",
         marginBottom: "1rem",
+        padding: "1rem",
+        border: "1px solid #ddd",
+        borderRadius: "8px",
       }}
     >
       <h3>{selectedUser ? "Edit User" : "Add User"}</h3>
