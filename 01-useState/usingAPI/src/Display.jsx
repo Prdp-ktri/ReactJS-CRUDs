@@ -10,7 +10,7 @@ function Display() {
 
   useEffect(() => {
     loadUsers();
-  }, []);
+  }, []); 
 
   const loadUsers = () => {
     const storedUsers = JSON.parse(localStorage.getItem("users")) || [];

@@ -7,7 +7,7 @@ function Add() {
   const navigate = useNavigate();
 
   const addUser = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
 
     // 1. Create a new user object with a unique ID (timestamp works well)
     const newUser = { id: Date.now(), name, email };
