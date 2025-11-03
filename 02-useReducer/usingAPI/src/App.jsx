@@ -47,7 +47,7 @@ function App() {
         body: JSON.stringify(user),
       });
       const data = await res.json();
-      dispatch({ type: "UPDATE_USER", payload: { ...data, id: Date.now() } });
+      dispatch({ type: "UPDATE_USER", payload: data });
     } catch (err) {
       alert("Error updating user");
     }

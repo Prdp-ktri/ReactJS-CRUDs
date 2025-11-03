@@ -28,15 +28,17 @@ const UserForm = ({ addUser, updateUser, editUser, setEditUser }) => {
         type="text"
         value={user.name}
         onChange={(e) => setUser({ ...user, name: e.target.value })}
-      /> <br />
+      />{" "}
+      <br />
       <input
         type="email"
         value={user.email}
         name=""
-        onChange={(e) => setUser({ ...user, name: e.target.value })}
+        onChange={(e) => setUser({ ...user, email: e.target.value })} 
         id=""
-      /> <br />
-      <button type="submit">Submit</button>
+      />{" "}
+      <br />
+      <button type="submit">{editUser ? "Update User" : "Add User"}</button>
     </form>
   );
 };
